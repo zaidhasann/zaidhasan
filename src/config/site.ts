@@ -71,7 +71,7 @@ export const site = {
     twitter: "https://x.com",
     linkedin: "https://linkedin.com",
     email: "mailto:zeesoffice12@gmail.com",
-    resume: "",
+    resume: "https://drive.google.com/file/d/1L1a7h0ppDsiFWtubKqZcieLrGkF7CztL/view",
     discord: "",
     medium: "",
   },
