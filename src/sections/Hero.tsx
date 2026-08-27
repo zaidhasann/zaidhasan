@@ -8,7 +8,6 @@ import { useVisitor } from "@/context/VisitorContext";
 const HEADLINE_TITLES = [
   "Full Stack Developer",
   "Backend Engineer",
-  "Open Source Contributor",
   "Clean Code Advocate",
 ];
 

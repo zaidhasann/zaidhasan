@@ -98,6 +98,7 @@ export const site = {
         live: "https://the-archive-tiiy.onrender.com/",
       },
       featured: true,
+      image: "/project-images/the-archive.png",
       categories: ["Fullstack", "Frontend"],
     },
     {
@@ -112,6 +113,7 @@ export const site = {
         live: "https://skill-swapp.onrender.com",
       },
       featured: true,
+      image: "/project-images/skill-swap.png",
       categories: ["Fullstack"],
     },
     {
@@ -126,6 +128,7 @@ export const site = {
         live: "https://studyroomm.onrender.com",
       },
       featured: true,
+      image: "/project-images/study-room.png",
       categories: ["Fullstack"],
     },
     {
@@ -140,6 +143,7 @@ export const site = {
         live: "https://ryder-1yzh.onrender.com",
       },
       featured: true,
+      image: "/project-images/drive-ease.png",
       categories: ["Fullstack", "Backend"],
     },
     {
@@ -154,6 +158,7 @@ export const site = {
         live: "https://clubmanchh.onrender.com",
       },
       featured: false,
+      image: "/project-images/club-manch.png",
       categories: ["Fullstack"],
     },
   ] as Project[],
