@@ -161,6 +161,34 @@ export const site = {
       image: "/project-images/club-manch.png",
       categories: ["Fullstack"],
     },
+    {
+      title: "CivicFix",
+      blurb:
+        "A multi-agent AI pipeline that turns a citizen's photo into a formal complaint email — classified, routed to the right municipality, drafted with legal grounding, and sent only after explicit human approval.",
+      story:
+        "Reporting a pothole, broken streetlight or garbage dump usually means finding the right department, its email address, and the right way to write a formal complaint. Most people give up. CivicFix removes that friction: a citizen uploads a photo, and a multi-agent AI pipeline classifies the issue, works out the correct municipality and ward, and drafts a formal complaint email. The user reviews, edits and explicitly approves it before anything is sent. Nothing is ever sent automatically.\n\n**Key Features**\n- One-tap reporting: photo capture with automatic GPS location and an optional description.\n- AI issue classification: a vision model identifies the issue type (pothole, streetlight, garbage, etc.) and estimates severity.\n- Jurisdiction resolution: reverse geocoding plus RAG over a municipality directory finds the correct ward, department and contact email.\n- Formal draft generation: the complaint email is grounded in retrieved legal references, with no invented citations.\n- Human-in-the-loop approval: the server enforces that no email is sent without the owner's explicit approval.\n- Tracking and follow-ups: a status timeline (Sent → Acknowledged → Resolved), plus reminder drafts after 14 days without a reply, again requiring approval.\n- Map view and duplicate detection: see nearby reported issues and avoid duplicate reports.\n- Public feed (opt-in): a map-based feed of civic issues, useful for RWAs and local journalists.\n\n**Architecture**\n\nA Next.js frontend talks to a Node/Express API that handles auth, uploads, complaint state and email delivery. The API triggers a Python FastAPI microservice running a LangGraph pipeline with four agents (Classifier, Location Resolver, Draft Writer, Approval-Send). The pipeline is stateful and pauses before the send step until the user approves. Data lives in MongoDB, with embeddings in a vector store for retrieval.",
+      stack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Mapbox",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "GPT-4o",
+      ],
+      year: "2026",
+      links: {
+        source: "https://github.com/zaidhasann/civicfix",
+      },
+      status: "In Progress",
+      featured: true,
+      image: "/project-images/civicfix.png",
+      categories: ["Fullstack", "Backend"],
+    },
   ] as Project[],
   skills: [
     "C++",
